@@ -58,16 +58,7 @@ public partial class FirstDemoContext : DbContext
                 .IsUnicode(false);
         });
 
-        modelBuilder.Entity<Departmewnt>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK__Departme__3214EC071E74CDEE");
-
-            entity.ToTable("Departmewnt");
-
-            entity.Property(e => e.Name)
-                .HasMaxLength(100)
-                .IsUnicode(false);
-        });
+       
 
         modelBuilder.Entity<Doctor>(entity =>
         {
