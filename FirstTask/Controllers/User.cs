@@ -13,6 +13,8 @@ namespace FirstTask.Controllers
             var Customer = db.Customers.ToList();
             var Employee = db.Employees.ToList();
             var Department = db.Departments.ToList();
+
+
         }
     }
 }
